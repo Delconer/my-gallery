@@ -7,6 +7,7 @@ Sencilla página responsive, realizada siguiendo el diseño del reto de devchall
 
 El proyecto puede ser visto en funcionamiento [aquí](https://my-gallery-delconer.netlify.app/ "aquí")
 
+[![](https://raw.githubusercontent.com/Delconer/my-gallery/main/img/galeria.png)](https://my-gallery-delconer.netlify.app/)
 
 ### Desarrollado usando:
 

@@ -1,0 +1,198 @@
+:root {
+  /* Fuente */
+  --font-1: 'Montserrat', sans-serif;
+  /* Colores */
+  --gray: #4e5150;
+  --light-gray: #A9A9A9;
+  --lighter-gray: #BDBDBD;
+  --lighter-gray2: #E5E5E5;
+  --footer: #B9BDCF;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+
+body {
+  font-family: var(--font-1);
+  font-size: 1.6rem;
+}
+
+/* utilidades */
+.container {
+  max-width: 100rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Usuario */
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 3rem 0;
+}
+
+.avatar {
+  max-width: 15.6rem;
+  border-radius: 15%;
+}
+
+.nombre {
+  color: var(--gray);
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.ubicacion {
+  color: var(--light-gray);
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .user{
+    margin: 5rem 0;
+  }
+  .avatar {
+    max-width: 20rem;
+  }
+
+  .nombre {
+    font-size: 2.4rem;
+  }
+
+  .ubicacion {
+    font-size: 1.4rem;
+  }
+}
+
+/* Social */
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem auto 4rem auto;
+}
+
+.social-cuadro {
+  background-color: var(--lighter-gray2);
+  width: 30%;
+  max-width: 8rem;
+  border-radius: 1rem;
+  padding: 1rem 0;
+}
+
+.numero {
+  color: var(--gray);
+  margin: 0;
+}
+
+.titulo {
+  color: var(--lighter-gray);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .social{
+    max-width: 30rem;
+    margin-bottom: 5rem;
+  }
+  .social-cuadro{
+    max-width: 10rem;
+    padding: 1.5rem 0;
+  }
+  .numero {
+    font-size: 1.8rem;
+  }
+
+  .titulo {
+    font-size: 1.4rem;
+  }
+
+}
+
+/* Grid */
+
+.grid {
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "image-a image-b image-b"
+    "image-c image-c image-d"
+    "image-f image-e image-d"
+  ;
+  gap: 1rem;
+
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.foto img {
+  width: 100%;
+  height: 105%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.foto1 {
+  grid-area: image-a;
+}
+
+.foto2 {
+  grid-area: image-b;
+}
+
+.foto3 {
+  grid-area: image-c;
+}
+
+.foto4 {
+  grid-area: image-d;
+}
+
+.foto5 {
+  grid-area: image-e;
+}
+
+.foto6 {
+  grid-area: image-f;
+}
+
+@media (min-width: 768px) {
+  .grid{
+    gap: 2rem;
+  }
+
+  .foto img{
+    border-radius: 2rem;
+  }
+}
+
+
+/* footer */
+
+footer p {
+  color: var(--footer);
+  font-family: var(--font-1);
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 5rem auto 2rem auto;
+}
